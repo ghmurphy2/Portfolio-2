@@ -1,0 +1,102 @@
+:root{
+    --background-color: rgb(94, 103, 112);
+    --text-color:rgb(255, 255, 255);
+  }
+   body{
+     box-sizing: border-box;
+  
+   }
+  main {
+  display: flex;
+  flex-wrap:wrap;
+  }
+
+  article {
+  padding: 30px;
+   flex: 1 0 800px ;
+   margin: 10px;
+   height: 400px;
+   background-color: var(--background-color);
+   color: var(--text-color);
+   border-radius: 15px;
+   border: solid 2px black;
+   overflow: hidden;
+  }
+  
+  #content {
+    min-height: calc(100vh - 70px);
+}
+
+  article h2{
+    text-align: center;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-bottom: black;
+    font-size: 24px;
+    margin: -15px -15px 15px -15px;
+    line-height: 40px;
+  }
+  
+  article:hover{
+    box-shadow: 3px 3px 5px #888888;
+    transform: scale(105%);
+    text-align: center;
+    top: -3px;
+    left: -3px;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  nav ul li a{
+    text-decoration: solid;
+    color: white;
+    padding: 20px;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    background-image:url("../images/citybw.jpg") ;
+    color: var(--text-color);
+    height: 150px;
+  }
+  
+  header h1{
+    font-size: 50px;
+    text-align: center;
+  }
+
+  header p{
+    text-align: center;
+    margin: 15px;
+  }
+  
+  footer{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    line-height: 30px;
+    height: 70px;
+  }
+  
+  .biography {
+    animation-duration: 3s;
+    animation-name: transform;
+    text-align:center;
+    
+  }
+
+  @media screen and (max-width: 996px) {
+    article{
+      flex: 1 1 500px;
+    }
+}
+  
+  @media screen and (max-width: 768px) {
+    article{ 
+        flex: 1 1 300px;
+    }
+  }
