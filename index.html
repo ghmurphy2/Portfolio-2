@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -15,8 +15,8 @@
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Online Store</h1>      
-    <p>Mission, Vission & Values</p>
+    <h1>Murphy Design</h1>      
+    <p>Function and Form first.</p>
   </div>
 </div>
 
@@ -33,20 +33,20 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Index</a></li>
-        <li><a href="#">Biography</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Information</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#Biography">Biography</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="container">    
+<div class="container" id="Biography">    
     <div class="row">
       <div class="col-sm-12">
         <div class="panel panel-primary">
           <div class="panel-heading">Biography</div>
-          <div class="panel-body"><img src="./assets/img/selfpic.png" class="img-responsive" style="width:100%" alt="Portrait"></div>
+          <div class="panel-body"><img src="./assets/img/selfpic.png" class="img-responsive" style="width:25%" alt="Portrait"></div>
+          <a href ="https://medium.com/@gavinhmurphy/low-contrast-minimalist-design-in-webpages-is-the-hype-worth-the-hurt-1d7f52361f6c">Medium Blog</a>
           <div class="panel-footer">Hello I'm Gavin Murphy, a recent graduate from the triology coding bootcamp.</div>
         </div>
       </div>
@@ -54,7 +54,7 @@
   </div>
   <br><br>
 
-<div class="container">    
+<div class="container" id="Projects">    
   <div class="row">
     <div class="col-sm-4">
       <div class="panel panel-primary">
@@ -80,7 +80,7 @@
   </div>
 </div><br>
 
-<div class="container">    
+<div class="container" id ="Contact">    
   <div class="row">
     <div class="col-sm-12">
       <div class="panel panel-primary">
@@ -98,10 +98,10 @@
   </div>
 </div>
 <footer class="container-fluid text-center">
-  <p>Online Store Copyright</p>  
-  <form class="form-inline">Get deals:
+  <p>Gavin Murphy 2021</p>  
+  <form class="form-inline">
     <input type="email" class="form-control" size="50" placeholder="Email Address">
-    <button type="button" class="btn btn-danger">Sign Up</button>
+    <button type="button" class="btn btn-danger">Information Request</button>
   </form>
 </footer>
 </body>
